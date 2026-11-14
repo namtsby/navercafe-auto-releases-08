@@ -29,15 +29,15 @@ CafeAuto(네이버 카페 1·2단계 통합 자동화)의 **공개 릴리스 자
 
 ```powershell
 # 소스 저장소에서 버전 증가 후
-git tag v1.0.1
+git tag v1.0.2
 git push origin main --tags
 
 # 또는 수동
 powershell -ExecutionPolicy Bypass -File build\build.ps1 -Repo "namtsby/navercafe-auto-releases-08"
-gh release create v1.0.1 dist\CafeAuto_v1.0.1_win64.zip `
-  dist\CafeAuto_v1.0.1_win64.zip.sha256 dist\update.json `
+gh release create v1.0.2 dist\CafeAuto_v1.0.2_win64.zip `
+  dist\CafeAuto_v1.0.2_win64.zip.sha256 dist\update.json `
   --repo namtsby/navercafe-auto-releases-08 `
-  --title "CafeAuto v1.0.1" --notes "..."
+  --title "CafeAuto v1.0.2" --notes "..."
 ```
 
 ## 주의
@@ -45,4 +45,5 @@ gh release create v1.0.1 dist\CafeAuto_v1.0.1_win64.zip `
 - 이 저장소에는 고객 계정·비밀번호·프로필·results 엑셀을 올리지 마세요.
 - 앱 exe에는 GitHub 토큰/API 키가 포함되지 않습니다.
 - `update.json`의 `asset.url`은 해당 릴리스의 zip 자산을 가리켜야 합니다.
+
 
