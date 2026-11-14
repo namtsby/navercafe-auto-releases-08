@@ -1,7 +1,13 @@
-# CafeAuto — Public Release Repository
+﻿# CafeAuto — Public Release Repository
 
 CafeAuto(네이버 카페 1·2단계 통합 자동화)의 **공개 릴리스 자산 전용 저장소**입니다.
 소스 코드는 포함하지 않습니다.
+
+## 초기 설치 (압축 해제 불필요)
+
+- [install_latest.bat](https://github.com/namtsby/navercafe-auto-releases-08/releases/latest/download/install_latest.bat) 다운로드 후 실행
+- 최신 zip을 자동 다운로드 → sha256 검증 → `%LOCALAPPDATA%\CafeAuto\app` 설치 → 실행
+- 이후 업데이트는 앱이 자동으로 처리
 
 ## 다운로드
 
@@ -39,3 +45,4 @@ gh release create v1.0.1 dist\CafeAuto_v1.0.1_win64.zip `
 - 이 저장소에는 고객 계정·비밀번호·프로필·results 엑셀을 올리지 마세요.
 - 앱 exe에는 GitHub 토큰/API 키가 포함되지 않습니다.
 - `update.json`의 `asset.url`은 해당 릴리스의 zip 자산을 가리켜야 합니다.
+
